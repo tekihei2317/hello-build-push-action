@@ -16,3 +16,5 @@ jobs:
         with:
           push: true
           tags: tekihei2317/hello-world:latest
+          cache-from: type=registry,ref=tekihei2317/hello-world:buildcache
+          cache-to: type=registry,ref=tekihei2317/hello-world:buildcache,mode=max
